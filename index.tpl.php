@@ -39,7 +39,7 @@
                    <label class = "label">National ID</label>
                    <input id = "natl_id" type = "text" name="natl_id" class="form_fields" placeholder = "National ID">
                     <br>
-                    <p id="error_natlid">adas</p>
+                    <p id="error_natlid"></p>
                     <br><br>
                    <label class = "label">Password</label>
                    <input id = "user_password" type = "password" name = "user_password"  class="form_fields" required>
