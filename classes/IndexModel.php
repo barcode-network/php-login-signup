@@ -16,11 +16,13 @@ class IndexModel extends Model
             exit();
         }
         
-        if ($result->num_rows == 1) {
+        if ($result->num_rows > 0) {
+
+            
 
             //Get database result
             while($row = $result->fetch_assoc()){
-               
+
                 $_SESSION['authenticated_user'] = array(
                     'licence_num'=>$row['license_num'],
                     'name'=>$row['first_name']." ".$row['last_name'],
